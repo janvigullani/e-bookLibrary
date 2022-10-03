@@ -1,0 +1,10 @@
+package com.DAO;
+import com.entity.*;
+
+public interface UserDAO {
+		public boolean userRegister(User  us);
+		public User login(String email, String password);
+		public boolean checkpassword(int id,String ps);
+		public boolean updateprofile(User us);
+		public boolean addAddress(User u);
+}
